@@ -64,12 +64,12 @@ const styles = StyleSheet.create({
     marginBottom:-165,
     marginTop: 250,
     paddingLeft:20,
+    backgroundColor:'#fff',
     shadowColor: '#171717',
     shadowOffset: {width: -9, height: 4},
     shadowOpacity: 0.2,
     shadowRadius: 3,
     borderStartWidth: 3,
-    borderWidth: 2,
     marginLeft: 25,
   }
 });

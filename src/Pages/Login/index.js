@@ -64,7 +64,6 @@ const styles = StyleSheet.create({
     shadowRadius: 3,
     backgroundColor: "#fff",
     marginLeft: 25,
-   
   },
   Text:{
     color: "#000",
