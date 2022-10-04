@@ -9,7 +9,7 @@ export default function Digito({navigation}){
      <ImageBackground source={require('../../../assets/cantina.png')}  style={{width: 370,height: 430, marginTop: -89, left:150}}/>
      <ImageBackground source={require('../../../assets/Sorriso.png')}  style={{width: 80,height: 80, marginTop: -299, marginLeft: 20}}/>
 
-     <TouchableOpacity onPress={() => navigation.navigate('Digito')}>
+     <TouchableOpacity onPress={() => navigation.navigate('AlterarSenha')}>
         <Text style={styles.botao}>Verificar</Text>
       </TouchableOpacity>
 
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     backgroundColor:'#fff',
     textAlign: 'center',
     alignSelf:'center',
-    top:-520,
+    top:-580,
     marginTop: 905, 
   }
 });

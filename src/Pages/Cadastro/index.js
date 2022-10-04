@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, StyleSheet, ImageBackground, TouchableOpacity } from "react-native";
+import { View, Text, TextInput, StyleSheet, ImageBackground, TouchableOpacity, Alert } from "react-native";
 
 export default function Cadastro() {
 
@@ -11,7 +11,10 @@ export default function Cadastro() {
 
   function handleSignIn() {
     if (cpf === '' || senha === '' ||  nome === '' || email === '') {
-      alert("Preencha todos os campos")
+      Alert.alert(
+        "ATENÇÃO!",
+        "Preencha todos os campos"
+  )
       return;
     }
     const data = {

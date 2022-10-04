@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import { Component } from "react";
 import { View, Text, TextInput, StyleSheet,ImageBackground, TouchableOpacity, Alert } from "react-native";
 
 export default function Login({navigation}){
@@ -7,9 +6,15 @@ export default function Login({navigation}){
   const [cpf, setCpf] = useState('');
   const [senha, setSenha] = useState('');
 
-  function handleSignIn() {
+  function createSimpleAlert() {
+
     if (cpf === '' || senha === '' ||  nome === '' || email === '') {
-      alert("Preencha todos os campos")
+        
+      Alert.alert(
+        "ATENÇÃO!",
+        "Preencha todos os campos"
+  )
+      
       return;
     }
     const data = {
@@ -33,7 +38,7 @@ export default function Login({navigation}){
       </TouchableOpacity>
       <ImageBackground source={require('../../../assets/Sorriso.png')}  style={{width: 80,height: 80, marginTop: -600, marginLeft: 10}}/>
       
-      <TouchableOpacity onPress={handleSignIn}>
+      <TouchableOpacity onPress={createSimpleAlert} >
         <Text style={styles.botao}>Logar</Text>
       </TouchableOpacity>
 

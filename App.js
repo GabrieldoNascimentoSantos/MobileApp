@@ -7,6 +7,7 @@ import Login from './src/Pages/Login/index';
 import Cadastro from './src/Pages/Cadastro/index'
 import Senha from './src/Pages/Senha/index'
 import Digito from "./src/Pages/Senha/Digito";
+import AlterarSenha from "./src/Pages/Senha/Alterar";
 
 
 
@@ -21,6 +22,7 @@ export default  function App(){
         <Stack.Screen name="Cadastro" component={Cadastro}/>
         <Stack.Screen name="Senha" component={Senha}/>
         <Stack.Screen name="Digito" component={Digito}/>
+        <Stack.Screen name="AlterarSenha" component={AlterarSenha}/>
 
 
       </Stack.Navigator>
